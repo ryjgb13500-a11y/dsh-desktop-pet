@@ -1,0 +1,12 @@
+{
+  "name": "dsh-desktop-pet",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DSH Desktop Pet 常驻插件：随 DSH 启动拉起桌面宠物进程，提供任务状态桥，DSH 关闭时终止宠物",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  }
+}

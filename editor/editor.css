@@ -1,0 +1,156 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  display: flex; flex-direction: column;
+  font: 13px/1.5 "Segoe UI", "Microsoft YaHei", sans-serif;
+  background: #151a24; color: #e8eef8;
+  overflow: hidden;
+}
+
+/* ---- 顶栏 ---- */
+.topbar {
+  display: flex; align-items: center; gap: 14px;
+  padding: 8px 14px;
+  background: #1d2432;
+  border-bottom: 1px solid #2a3446;
+  flex: none;
+}
+.brand { font-weight: 700; font-size: 15px; white-space: nowrap; }
+.tabs { display: flex; gap: 4px; }
+.tabs button {
+  padding: 6px 14px;
+  border: 1px solid #34415a; border-radius: 7px;
+  background: #232c3e; color: #b9c6dc; cursor: pointer; font-size: 13px;
+}
+.tabs button.active { background: #35507e; border-color: #5a7ec4; color: #fff; }
+.zoom-group { display: flex; align-items: center; gap: 6px; color: #8fa0bd; white-space: nowrap; }
+.zoom-group button {
+  width: 26px; height: 26px;
+  border: 1px solid #34415a; border-radius: 6px;
+  background: #232c3e; color: #cfe0f7; cursor: pointer;
+}
+#zoomFit { width: auto; padding: 0 10px; }
+.topbar .primary {
+  margin-left: auto;
+  padding: 8px 18px;
+  border: none; border-radius: 8px;
+  background: #2f7f5f; color: #fff; font-size: 14px; font-weight: 600; cursor: pointer;
+}
+.topbar .primary:hover { background: #37966f; }
+#status { color: #7fd4a8; white-space: nowrap; }
+.topbar button {
+  padding: 6px 12px;
+  border: 1px solid #34415a; border-radius: 7px;
+  background: #232c3e; color: #cfe0f7; cursor: pointer; font-size: 13px;
+}
+.topbar button:hover { background: #2d3a52; }
+
+/* ---- 主体三栏 ---- */
+.layout { flex: 1; display: flex; min-height: 0; }
+
+/* 素材库 */
+.library {
+  width: 250px; flex: none;
+  border-right: 1px solid #2a3446;
+  background: #191f2c;
+  padding: 12px;
+  overflow-y: auto;
+}
+.library h2 { font-size: 14px; margin-bottom: 8px; }
+.library .hint { font-size: 11px; color: #7d8aa0; font-weight: 400; }
+.groups .grp-title {
+  margin: 12px 0 6px;
+  font-size: 12px; color: #93a5c4;
+  border-bottom: 1px solid #273043; padding-bottom: 3px;
+}
+.asset-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.asset-card {
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  padding: 6px 4px;
+  border: 1px solid #2c374d; border-radius: 8px;
+  background: #202838;
+  cursor: grab;
+  transition: border-color .12s, background .12s;
+}
+.asset-card:hover { border-color: #5a7ec4; background: #263349; }
+.asset-card canvas { pointer-events: none; }
+.asset-card .nm { font-size: 10px; color: #a9b8d2; text-align: center; word-break: break-all; line-height: 1.2; }
+
+/* 画布 */
+.canvas-zone { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; min-width: 0; }
+.canvas-wrap {
+  position: relative;
+  background: repeating-conic-gradient(#1b2130 0 25%, #1e2434 0 50%) 0 0/28px 28px;
+  border: 1px solid #2c374d; border-radius: 6px;
+  overflow: auto;
+  max-width: 100%; max-height: 100%;
+}
+#stage { display: block; cursor: crosshair; }
+.canvas-tip { font-size: 11px; color: #7d8aa0; }
+
+/* 属性面板 */
+.props {
+  width: 240px; flex: none;
+  border-left: 1px solid #2a3446;
+  background: #191f2c;
+  padding: 12px;
+  overflow-y: auto;
+}
+.props h2 { font-size: 14px; margin-bottom: 8px; }
+.props .dim { color: #7d8aa0; font-size: 12px; }
+.prop-row { display: flex; align-items: center; gap: 6px; margin-bottom: 7px; }
+.prop-row label { width: 44px; color: #93a5c4; font-size: 12px; }
+.prop-row input[type="number"] {
+  width: 64px; padding: 3px 6px;
+  border: 1px solid #34415a; border-radius: 5px;
+  background: #121826; color: #e8eef8; font-size: 12px;
+}
+.prop-row .spin { display: flex; gap: 2px; }
+.prop-row .spin button {
+  width: 20px; height: 20px;
+  border: 1px solid #34415a; border-radius: 4px;
+  background: #232c3e; color: #cfe0f7; cursor: pointer; font-size: 11px;
+}
+.prop-btns { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+.prop-btns button {
+  padding: 5px 10px;
+  border: 1px solid #34415a; border-radius: 6px;
+  background: #232c3e; color: #cfe0f7; cursor: pointer; font-size: 12px;
+}
+.prop-btns button.danger { border-color: #6e3540; color: #ff9d94; }
+.prop-sep { border-top: 1px solid #2a3446; margin: 14px 0; }
+.chk { display: flex; align-items: center; gap: 6px; color: #93a5c4; font-size: 12px; }
+
+/* ---- 图层面板（PS 式） ---- */
+.layers { display: flex; flex-direction: column; gap: 3px; margin-bottom: 4px; }
+.layer-row {
+  display: flex; align-items: center; gap: 7px;
+  padding: 4px 6px;
+  border: 1px solid #2c374d; border-radius: 7px;
+  background: #202838;
+  cursor: pointer;
+  user-select: none;
+}
+.layer-row:hover { border-color: #5a7ec4; }
+.layer-row.selected { border-color: #ff4d6d; background: #2c2434; }
+.layer-row.hidden-row { opacity: 0.45; }
+.layer-row .thumb {
+  width: 40px; height: 40px; flex: none;
+  border-radius: 5px;
+  background: repeating-conic-gradient(#2a3142 0 25%, #303848 0 50%) 0 0/10px 10px;
+  border: 1px solid #3a4660;
+  overflow: hidden;
+}
+.layer-row .lname {
+  flex: 1; min-width: 0;
+  font-size: 11px; color: #c4d2e8;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.layer-row .eye {
+  flex: none; width: 22px; height: 22px;
+  border: 1px solid #34415a; border-radius: 5px;
+  background: #232c3e; color: #cfe0f7;
+  font-size: 12px; cursor: pointer; line-height: 1;
+}
+.layer-row .eye:hover { background: #2d3a52; }
+.layers .drag-hint { font-size: 11px; color: #7d8aa0; padding: 2px 4px; }

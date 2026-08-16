@@ -1,0 +1,289 @@
+{
+  "_meta": {
+    "canvas": [
+      560,
+      600
+    ],
+    "origin": "top_left",
+    "anchor": "part_center",
+    "note": "sleep 姿态由用户手操完成；surprised/writing 由 dsh 基于 sleep 成品推导（同构图，仅换头/加链）。渲染器按 drawOrder 全量驱动。"
+  },
+  "sleep": {
+    "parts": {
+      "chair_front": {
+        "x": 284,
+        "y": 379,
+        "scale": 1.46,
+        "rot": 0
+      },
+      "stand_torso": {
+        "x": 287,
+        "y": 424,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "head_sleep": {
+        "x": 287,
+        "y": 199,
+        "rot": 0,
+        "scale": 0.89
+      },
+      "sit_right_hand": {
+        "x": 345,
+        "y": 333,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "sit_left_hand": {
+        "x": 234,
+        "y": 335,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "desk": {
+        "x": 282,
+        "y": 462,
+        "rot": 0,
+        "scale": 1.51
+      },
+      "ink_bottle": {
+        "x": 433,
+        "y": 330,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "seg_12": {
+        "x": 343,
+        "y": 318,
+        "scale": -0.3,
+        "rot": 1
+      }
+    },
+    "vfx": {
+      "zzz_origin": {
+        "x": 208,
+        "y": 129,
+        "scale": 0.7
+      },
+      "bubble_pop": {
+        "x": 258,
+        "y": 247,
+        "scale": 0.34
+      },
+      "snot_bubble": {
+        "x": 258,
+        "y": 247,
+        "scale": 0.34
+      }
+    },
+    "drawOrder": [
+      "chair_front",
+      "stand_torso",
+      "head_sleep",
+      "desk",
+      "sit_right_hand",
+      "ink_bottle",
+      "sit_left_hand",
+      "seg_12"
+    ],
+    "hidden": [],
+    "hiddenVfx": []
+  },
+  "surprised": {
+    "parts": {
+      "chair_front": {
+        "x": 284,
+        "y": 379,
+        "scale": 1.46,
+        "rot": 0
+      },
+      "stand_torso": {
+        "x": 287,
+        "y": 424,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "head_surprised": {
+        "x": 287,
+        "y": 199,
+        "rot": 0,
+        "scale": 0.89
+      },
+      "sit_right_hand": {
+        "x": 345,
+        "y": 333,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "sit_left_hand": {
+        "x": 234,
+        "y": 335,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "desk": {
+        "x": 282,
+        "y": 462,
+        "rot": 0,
+        "scale": 1.51
+      },
+      "ink_bottle": {
+        "x": 433,
+        "y": 330,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "seg_12": {
+        "x": 343,
+        "y": 318,
+        "scale": -0.3,
+        "rot": 1
+      }
+    },
+    "vfx": {
+      "surprise": {
+        "x": 359,
+        "y": 108,
+        "scale": 0.9
+      }
+    },
+    "drawOrder": [
+      "chair_front",
+      "stand_torso",
+      "head_surprised",
+      "desk",
+      "ink_bottle",
+      "sit_right_hand",
+      "sit_left_hand",
+      "seg_12"
+    ],
+    "hidden": [],
+    "hiddenVfx": []
+  },
+  "writing": {
+    "parts": {
+      "chair_front": {
+        "x": 284,
+        "y": 379,
+        "scale": 1.46,
+        "rot": 0
+      },
+      "stand_torso": {
+        "x": 287,
+        "y": 424,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "head_serious": {
+        "x": 287,
+        "y": 199,
+        "rot": 0,
+        "scale": 0.89
+      },
+      "desk": {
+        "x": 282,
+        "y": 462,
+        "rot": 0,
+        "scale": 1.51
+      },
+      "ink_bottle": {
+        "x": 433,
+        "y": 330,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "sit_left_hand": {
+        "x": 234,
+        "y": 335,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "sit_right_hand": {
+        "x": 345,
+        "y": 333,
+        "scale": 0.7,
+        "rot": 0
+      },
+      "seg_12": {
+        "x": 343,
+        "y": 318,
+        "scale": -0.3,
+        "rot": 1
+      }
+    },
+    "vfx": {},
+    "drawOrder": [
+      "chair_front",
+      "stand_torso",
+      "head_serious",
+      "desk",
+      "ink_bottle",
+      "sit_left_hand",
+      "sit_right_hand",
+      "seg_12"
+    ],
+    "hidden": [],
+    "hiddenVfx": [],
+    "arm_chain_writing": {
+      "shoulder": {
+        "x": 342,
+        "y": 288
+      },
+      "elbow": {
+        "x": 372,
+        "y": 345
+      },
+      "wrist": {
+        "x": 352,
+        "y": 385
+      },
+      "quill_tip": {
+        "x": 323,
+        "y": 375
+      }
+    },
+    "arm_chain_support": {
+      "shoulder": {
+        "x": 232,
+        "y": 288
+      },
+      "elbow": {
+        "x": 215,
+        "y": 355
+      },
+      "wrist": {
+        "x": 212,
+        "y": 402
+      }
+    }
+  },
+  "animation": {
+    "breath": {
+      "targets": [
+        "stand_torso"
+      ],
+      "amplitude": 1.6,
+      "cycle_ms": 3200
+    },
+    "vfx_breath": [
+      "snot_bubble"
+    ],
+    "wake": {
+      "pop_ms": 350,
+      "surprise_ms": 600,
+      "fade_ms": 400
+    },
+    "writing": {
+      "targets": [
+        "sit_right_hand",
+        "seg_12"
+      ],
+      "amplitude": 5,
+      "speed_ms": 150
+    },
+    "demo": {
+      "sleep_ms": 3000,
+      "writing_ms": 5000
+    }
+  }
+}

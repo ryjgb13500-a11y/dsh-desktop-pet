@@ -1,0 +1,443 @@
+{
+  "format": "dsh.game_asset_manifest",
+  "version": "1.0",
+  "engine_target": [
+    "DSH",
+    "Unity",
+    "Godot",
+    "Spine",
+    "RPG-Maker"
+  ],
+  "asset_type": "2d_modular_character_sprite_atlas",
+  "source": {
+    "atlas": "character_sprite_atlas.png",
+    "width": 1536,
+    "height": 1024,
+    "color_space": "sRGB",
+    "pixel_format": "RGBA32",
+    "alpha": "straight",
+    "background": "transparent",
+    "premultiplied_alpha": false
+  },
+  "coordinate_system": {
+    "origin": "top_left",
+    "x_axis": "right",
+    "y_axis": "down",
+    "unit": "pixel"
+  },
+  "slicing": {
+    "mode": "semantic_assets",
+    "allow_rotation": false,
+    "allow_trim": true,
+    "extrude": 2,
+    "padding": 4,
+    "keep_empty_alpha": true
+  },
+  "assembly": {
+    "character_root": "root",
+    "head_socket": "neck",
+    "left_arm_chain": [
+      "left_upper_arm",
+      "left_forearm",
+      "left_hand"
+    ],
+    "right_arm_chain": [
+      "right_upper_arm",
+      "right_forearm",
+      "right_hand"
+    ],
+    "vfx_never_baked_into_head": true,
+    "furniture_never_baked_into_character": true,
+    "props_never_baked_into_character": true
+  },
+  "animations": {
+    "idle_stand": [
+      "stand_torso",
+      "head_serious"
+    ],
+    "idle_sit": [
+      "sit_torso",
+      "head_serious"
+    ],
+    "sleep": [
+      "sit_torso",
+      "head_sleep",
+      "vfx_sleep_z",
+      "vfx_drool"
+    ],
+    "surprised": [
+      "sit_torso",
+      "head_surprised",
+      "vfx_surprise",
+      "vfx_snot_bubble"
+    ],
+    "writing": [
+      "sit_torso",
+      "head_serious",
+      "sit_left_upper_arm",
+      "sit_left_forearm",
+      "sit_left_hand",
+      "sit_right_upper_arm",
+      "sit_right_forearm",
+      "sit_right_hand",
+      "quill",
+      "chair_back",
+      "desk",
+      "ink_bottle"
+    ]
+  },
+  "assets": [
+    {
+      "id": "stand_full",
+      "group": "pose",
+      "description": "站立完整正视图",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "sit_full",
+      "group": "pose",
+      "description": "坐姿完整正视图",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "head_sleep",
+      "group": "head",
+      "description": "正面睡眠头；不含口水、鼻涕泡、Z",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "head_surprised",
+      "group": "head",
+      "description": "正面惊讶头；不含惊叹号及其他VFX",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "head_serious",
+      "group": "head",
+      "description": "正面认真头",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "stand_torso",
+      "group": "body",
+      "description": "站立无头无臂完整身体",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "stand_left_upper_arm",
+      "group": "limb",
+      "description": "站立左上臂",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "stand_left_forearm",
+      "group": "limb",
+      "description": "站立左小臂",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "stand_left_hand",
+      "group": "hand",
+      "description": "站立左手",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "stand_right_upper_arm",
+      "group": "limb",
+      "description": "站立右上臂",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "stand_right_forearm",
+      "group": "limb",
+      "description": "站立右小臂",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "stand_right_hand",
+      "group": "hand",
+      "description": "站立右手",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "sit_torso",
+      "group": "body",
+      "description": "坐姿无头无臂完整身体",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "sit_left_upper_arm",
+      "group": "limb",
+      "description": "坐姿左上臂",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "sit_left_forearm",
+      "group": "limb",
+      "description": "坐姿左小臂",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "sit_left_hand",
+      "group": "hand",
+      "description": "坐姿左手",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "sit_right_upper_arm",
+      "group": "limb",
+      "description": "坐姿右上臂",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "sit_right_forearm",
+      "group": "limb",
+      "description": "坐姿右小臂",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "sit_right_hand",
+      "group": "hand",
+      "description": "坐姿右手",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "chair_front",
+      "group": "furniture",
+      "description": "椅子正面",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "chair_back",
+      "group": "furniture",
+      "description": "椅子背面",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "desk",
+      "group": "furniture",
+      "description": "木桌正面",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "ink_bottle",
+      "group": "prop",
+      "description": "独立墨水瓶",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "quill",
+      "group": "prop",
+      "description": "独立羽毛笔",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "vfx_sleep_z",
+      "group": "vfx",
+      "description": "睡眠Z",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "vfx_drool",
+      "group": "vfx",
+      "description": "口水",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "vfx_snot_bubble",
+      "group": "vfx",
+      "description": "鼻涕泡",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "vfx_surprise",
+      "group": "vfx",
+      "description": "惊叹号",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    },
+    {
+      "id": "vfx_bubble_pop",
+      "group": "vfx",
+      "description": "泡泡爆破",
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "trim": true,
+      "rotation": 0
+    }
+  ],
+  "validation": {
+    "required_groups": [
+      "pose",
+      "head",
+      "body",
+      "limb",
+      "hand",
+      "furniture",
+      "prop",
+      "vfx"
+    ],
+    "head_count": 3,
+    "vfx_count": 5,
+    "standing_arm_parts": 6,
+    "sitting_arm_parts": 6,
+    "furniture_count": 3,
+    "prop_count": 2,
+    "transparent_background_required": true,
+    "no_text_in_runtime_assets": true,
+    "no_vfx_baked_into_heads": true
+  },
+  "dsh_action": {
+    "action": "build_2d_character_plugin",
+    "input_atlas": "character_sprite_atlas.png",
+    "input_manifest": "dsh_manifest.json",
+    "outputs": [
+      "sprite_atlas",
+      "character_part_registry",
+      "animation_presets",
+      "attachment_socket_map",
+      "vfx_registry"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+node_modules/
+npm-debug.log*
+dist/
+out/
+*.log
+.DS_Store
+Thumbs.db
+
+# 本地快照与备份（不发布）
+snapshot_*/
+backup_*/
+
+# 运行时的位置/缩放配置（含个人桌面坐标）
+pet-position.json
+pet-position*.json

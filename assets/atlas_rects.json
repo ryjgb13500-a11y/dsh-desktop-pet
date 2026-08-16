@@ -1,0 +1,616 @@
+{
+  "atlas": "character_sprite_atlas.png",
+  "atlasSize": [
+    1536,
+    1024
+  ],
+  "assets": {
+    "stand_full": {
+      "rect": [
+        7,
+        8,
+        275,
+        504
+      ],
+      "confidence": "high"
+    },
+    "sit_full": {
+      "rect": [
+        297,
+        52,
+        252,
+        442
+      ],
+      "confidence": "high"
+    },
+    "stand_torso": {
+      "rect": [
+        11,
+        540,
+        261,
+        442
+      ],
+      "confidence": "guess"
+    },
+    "sit_torso": {
+      "rect": [
+        284,
+        620,
+        274,
+        307
+      ],
+      "confidence": "guess"
+    },
+    "head_sleep": {
+      "rect": [
+        561,
+        90,
+        215,
+        201
+      ],
+      "confidence": "high"
+    },
+    "head_surprised": {
+      "rect": [
+        776,
+        90,
+        215,
+        201
+      ],
+      "confidence": "high"
+    },
+    "head_serious": {
+      "rect": [
+        991,
+        90,
+        215,
+        201
+      ],
+      "confidence": "high"
+    },
+    "stand_left_upper_arm": null,
+    "stand_left_forearm": null,
+    "stand_left_hand": null,
+    "stand_right_upper_arm": null,
+    "stand_right_forearm": null,
+    "stand_right_hand": null,
+    "sit_left_upper_arm": {
+      "rect": [
+        996,
+        368,
+        146,
+        209
+      ],
+      "confidence": "guess"
+    },
+    "sit_left_forearm": {
+      "rect": [
+        552,
+        372,
+        88,
+        220
+      ],
+      "confidence": "guess"
+    },
+    "sit_right_upper_arm": {
+      "rect": [
+        801,
+        378,
+        102,
+        188
+      ],
+      "confidence": "guess"
+    },
+    "sit_right_forearm": {
+      "rect": [
+        911,
+        378,
+        76,
+        200
+      ],
+      "confidence": "guess"
+    },
+    "sit_left_hand": {
+      "rect": [
+        575,
+        610,
+        70,
+        70
+      ],
+      "confidence": "guess"
+    },
+    "sit_right_hand": {
+      "rect": [
+        1219,
+        607,
+        64,
+        69
+      ],
+      "confidence": "guess"
+    },
+    "chair_front": {
+      "rect": [
+        1214,
+        41,
+        141,
+        248
+      ],
+      "confidence": "high"
+    },
+    "chair_back": {
+      "rect": [
+        1382,
+        39,
+        135,
+        249
+      ],
+      "confidence": "high"
+    },
+    "desk": {
+      "rect": [
+        1117,
+        316,
+        314,
+        162
+      ],
+      "confidence": "high"
+    },
+    "ink_bottle": {
+      "rect": [
+        1439,
+        384,
+        87,
+        93
+      ],
+      "confidence": "guess"
+    },
+    "quill": {
+      "rect": [
+        1215,
+        806,
+        44,
+        109
+      ],
+      "confidence": "guess"
+    },
+    "vfx_sleep_z": {
+      "rect": [
+        597,
+        784,
+        84,
+        86
+      ],
+      "confidence": "high"
+    },
+    "vfx_drool": {
+      "rect": [
+        810,
+        811,
+        50,
+        157
+      ],
+      "confidence": "high"
+    },
+    "vfx_snot_bubble": {
+      "rect": [
+        990,
+        826,
+        174,
+        129
+      ],
+      "confidence": "high"
+    },
+    "vfx_surprise": {
+      "rect": [
+        1252,
+        833,
+        57,
+        80
+      ],
+      "confidence": "high"
+    },
+    "vfx_bubble_pop": {
+      "rect": [
+        1362,
+        790,
+        154,
+        164
+      ],
+      "confidence": "guess"
+    },
+    "seg_00": {
+      "rect": [
+        7,
+        8,
+        275,
+        504
+      ],
+      "confidence": "segment"
+    },
+    "seg_01": {
+      "rect": [
+        1382,
+        39,
+        135,
+        249
+      ],
+      "confidence": "segment"
+    },
+    "seg_02": {
+      "rect": [
+        1214,
+        41,
+        141,
+        248
+      ],
+      "confidence": "segment"
+    },
+    "seg_03": {
+      "rect": [
+        297,
+        52,
+        252,
+        442
+      ],
+      "confidence": "segment"
+    },
+    "seg_04": {
+      "rect": [
+        561,
+        89,
+        646,
+        202
+      ],
+      "confidence": "segment"
+    },
+    "seg_05": {
+      "rect": [
+        1117,
+        316,
+        314,
+        162
+      ],
+      "confidence": "segment"
+    },
+    "seg_06": {
+      "rect": [
+        996,
+        368,
+        146,
+        209
+      ],
+      "confidence": "segment"
+    },
+    "seg_07": {
+      "rect": [
+        552,
+        372,
+        88,
+        220
+      ],
+      "confidence": "segment"
+    },
+    "seg_08": {
+      "rect": [
+        801,
+        378,
+        102,
+        188
+      ],
+      "confidence": "segment"
+    },
+    "seg_09": {
+      "rect": [
+        911,
+        378,
+        76,
+        200
+      ],
+      "confidence": "segment"
+    },
+    "seg_10": {
+      "rect": [
+        702,
+        379,
+        85,
+        213
+      ],
+      "confidence": "segment"
+    },
+    "seg_11": {
+      "rect": [
+        1439,
+        384,
+        87,
+        93
+      ],
+      "confidence": "segment"
+    },
+    "seg_12": {
+      "rect": [
+        1317,
+        522,
+        185,
+        234
+      ],
+      "confidence": "segment"
+    },
+    "seg_13": {
+      "rect": [
+        1206,
+        530,
+        73,
+        54
+      ],
+      "confidence": "segment"
+    },
+    "seg_14": {
+      "rect": [
+        11,
+        540,
+        261,
+        442
+      ],
+      "confidence": "segment"
+    },
+    "seg_15": {
+      "rect": [
+        590,
+        583,
+        1,
+        1
+      ],
+      "confidence": "segment"
+    },
+    "seg_16": {
+      "rect": [
+        1097,
+        605,
+        62,
+        69
+      ],
+      "confidence": "segment"
+    },
+    "seg_17": {
+      "rect": [
+        1219,
+        607,
+        64,
+        69
+      ],
+      "confidence": "segment"
+    },
+    "seg_18": {
+      "rect": [
+        575,
+        610,
+        70,
+        70
+      ],
+      "confidence": "segment"
+    },
+    "seg_19": {
+      "rect": [
+        701,
+        610,
+        70,
+        71
+      ],
+      "confidence": "segment"
+    },
+    "seg_20": {
+      "rect": [
+        967,
+        610,
+        66,
+        67
+      ],
+      "confidence": "segment"
+    },
+    "seg_21": {
+      "rect": [
+        831,
+        614,
+        66,
+        65
+      ],
+      "confidence": "segment"
+    },
+    "seg_22": {
+      "rect": [
+        284,
+        620,
+        274,
+        307
+      ],
+      "confidence": "segment"
+    },
+    "seg_23": {
+      "rect": [
+        585,
+        687,
+        63,
+        83
+      ],
+      "confidence": "segment"
+    },
+    "seg_24": {
+      "rect": [
+        713,
+        689,
+        68,
+        87
+      ],
+      "confidence": "segment"
+    },
+    "seg_25": {
+      "rect": [
+        834,
+        691,
+        69,
+        80
+      ],
+      "confidence": "segment"
+    },
+    "seg_26": {
+      "rect": [
+        1101,
+        693,
+        66,
+        79
+      ],
+      "confidence": "segment"
+    },
+    "seg_27": {
+      "rect": [
+        1225,
+        693,
+        63,
+        77
+      ],
+      "confidence": "segment"
+    },
+    "seg_28": {
+      "rect": [
+        954,
+        694,
+        74,
+        83
+      ],
+      "confidence": "segment"
+    },
+    "seg_29": {
+      "rect": [
+        597,
+        784,
+        84,
+        86
+      ],
+      "confidence": "segment"
+    },
+    "seg_30": {
+      "rect": [
+        1362,
+        790,
+        154,
+        164
+      ],
+      "confidence": "segment"
+    },
+    "seg_31": {
+      "rect": [
+        1215,
+        806,
+        44,
+        109
+      ],
+      "confidence": "segment"
+    },
+    "seg_32": {
+      "rect": [
+        810,
+        811,
+        50,
+        157
+      ],
+      "confidence": "segment"
+    },
+    "seg_33": {
+      "rect": [
+        1501,
+        817,
+        19,
+        16
+      ],
+      "confidence": "segment"
+    },
+    "seg_34": {
+      "rect": [
+        1362,
+        822,
+        20,
+        19
+      ],
+      "confidence": "segment"
+    },
+    "seg_35": {
+      "rect": [
+        990,
+        826,
+        174,
+        129
+      ],
+      "confidence": "segment"
+    },
+    "seg_36": {
+      "rect": [
+        1252,
+        833,
+        57,
+        80
+      ],
+      "confidence": "segment"
+    },
+    "seg_37": {
+      "rect": [
+        894,
+        846,
+        37,
+        101
+      ],
+      "confidence": "segment"
+    },
+    "seg_38": {
+      "rect": [
+        657,
+        865,
+        63,
+        64
+      ],
+      "confidence": "segment"
+    },
+    "seg_39": {
+      "rect": [
+        1270,
+        880,
+        58,
+        55
+      ],
+      "confidence": "segment"
+    },
+    "seg_40": {
+      "rect": [
+        1218,
+        925,
+        26,
+        27
+      ],
+      "confidence": "segment"
+    },
+    "seg_41": {
+      "rect": [
+        1479,
+        927,
+        22,
+        19
+      ],
+      "confidence": "segment"
+    },
+    "seg_42": {
+      "rect": [
+        703,
+        928,
+        53,
+        53
+      ],
+      "confidence": "segment"
+    }
+  },
+  "head_extra": {
+    "files": {
+      "head_sleep": "head_sleep.png",
+      "head_surprised": "head_surprised.png",
+      "head_serious": "head_serious.png"
+    }
+  }
+}

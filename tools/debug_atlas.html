@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Atlas Segment Debug</title>
+<style>body{margin:10px;background:#222;color:#eee;font-family:monospace}canvas{border:1px solid #555;background:repeating-conic-gradient(#333 0 25%,#3a3a3a 0 50%) 0 0/24px 24px}</style></head>
+<body>
+<h3>atlas 组件索引（43 个）—— 请把索引对应到 manifest 资产 ID</h3>
+<canvas id="c" width="1536" height="1024"></canvas>
+<script>
+const ATLAS = '../assets/character_sprite_atlas.png'
+const SEGS = [{"x":7,"y":8,"w":275,"h":504,"area":89292,"avgColor":[143,147,170]},{"x":1382,"y":39,"w":135,"h":249,"area":25353,"avgColor":[126,85,80]},{"x":1214,"y":41,"w":141,"h":248,"area":26036,"avgColor":[109,84,94]},{"x":297,"y":52,"w":252,"h":442,"area":78349,"avgColor":[140,144,166]},{"x":561,"y":89,"w":646,"h":202,"area":99478,"avgColor":[129,146,182]},{"x":1117,"y":316,"w":314,"h":162,"area":40003,"avgColor":[162,93,65]},{"x":996,"y":368,"w":146,"h":209,"area":13043,"avgColor":[106,95,103]},{"x":552,"y":372,"w":88,"h":220,"area":12874,"avgColor":[116,105,114]},{"x":801,"y":378,"w":102,"h":188,"area":10876,"avgColor":[113,101,109]},{"x":911,"y":378,"w":76,"h":200,"area":11038,"avgColor":[114,102,109]},{"x":702,"y":379,"w":85,"h":213,"area":11701,"avgColor":[123,112,120]},{"x":1439,"y":384,"w":87,"h":93,"area":6865,"avgColor":[108,101,107]},{"x":1317,"y":522,"w":185,"h":234,"area":10506,"avgColor":[185,156,144]},{"x":1206,"y":530,"w":73,"h":54,"area":3061,"avgColor":[229,195,183]},{"x":11,"y":540,"w":261,"h":442,"area":72595,"avgColor":[175,168,176]},{"x":590,"y":583,"w":1,"h":1,"area":1,"avgColor":[202,168,159]},{"x":1097,"y":605,"w":62,"h":69,"area":3425,"avgColor":[225,196,189]},{"x":1219,"y":607,"w":64,"h":69,"area":3441,"avgColor":[225,195,187]},{"x":575,"y":610,"w":70,"h":70,"area":3464,"avgColor":[225,196,188]},{"x":701,"y":610,"w":70,"h":71,"area":3443,"avgColor":[225,197,189]},{"x":967,"y":610,"w":66,"h":67,"area":3311,"avgColor":[229,198,189]},{"x":831,"y":614,"w":66,"h":65,"area":3310,"avgColor":[228,200,191]},{"x":284,"y":620,"w":274,"h":307,"area":55446,"avgColor":[157,148,156]},{"x":585,"y":687,"w":63,"h":83,"area":3957,"avgColor":[223,196,190]},{"x":713,"y":689,"w":68,"h":87,"area":4379,"avgColor":[220,193,189]},{"x":834,"y":691,"w":69,"h":80,"area":4249,"avgColor":[224,196,189]},{"x":1101,"y":693,"w":66,"h":79,"area":4105,"avgColor":[225,197,190]},{"x":1225,"y":693,"w":63,"h":77,"area":3938,"avgColor":[226,198,191]},{"x":954,"y":694,"w":74,"h":83,"area":4095,"avgColor":[224,196,190]},{"x":597,"y":784,"w":84,"h":86,"area":4405,"avgColor":[55,121,201]},{"x":1362,"y":790,"w":154,"h":164,"area":10165,"avgColor":[202,225,244]},{"x":1215,"y":806,"w":44,"h":109,"area":3543,"avgColor":[242,175,91]},{"x":810,"y":811,"w":50,"h":157,"area":4883,"avgColor":[155,206,243]},{"x":1501,"y":817,"w":19,"h":16,"area":199,"avgColor":[109,172,223]},{"x":1362,"y":822,"w":20,"h":19,"area":257,"avgColor":[118,177,222]},{"x":990,"y":826,"w":174,"h":129,"area":14466,"avgColor":[181,218,245]},{"x":1252,"y":833,"w":57,"h":80,"area":2065,"avgColor":[240,170,85]},{"x":894,"y":846,"w":37,"h":101,"area":2487,"avgColor":[150,202,241]},{"x":657,"y":865,"w":63,"h":64,"area":2557,"avgColor":[50,109,190]},{"x":1270,"y":880,"w":58,"h":55,"area":1424,"avgColor":[236,164,78]},{"x":1218,"y":925,"w":26,"h":27,"area":536,"avgColor":[231,155,71]},{"x":1479,"y":927,"w":22,"h":19,"area":294,"avgColor":[114,176,225]},{"x":703,"y":928,"w":53,"h":53,"area":1800,"avgColor":[45,101,182]}]
+const img = new Image()
+img.onload = () => {
+  const cv = document.getElementById('c')
+  const g = cv.getContext('2d')
+  g.drawImage(img, 0, 0)
+  SEGS.forEach((s, i) => {
+    g.strokeStyle = '#ff4d6d'; g.lineWidth = 1.5; g.strokeRect(s.x, s.y, s.w, s.h)
+    g.fillStyle = '#ff4d6d'; g.strokeStyle = '#fff'; g.lineWidth = 3
+    g.strokeText(String(i), s.x + 2, Math.min(s.y + 12, 1024 - 8)); g.fillText(String(i), s.x + 2, Math.min(s.y + 12, 1024 - 8))
+  })
+}
+img.src = ATLAS
+</script>
+</body></html>
