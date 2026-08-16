@@ -6,6 +6,11 @@ A little whale-maid living on your desktop — sleeping, waking up for tasks, wr
 
 ![preview](docs/preview_sleep.png)
 
+![demo animation](docs/demo.gif)
+
+> 动画演示：睡眠（鼻涕泡呼吸）→ 唤醒（泡泡破裂+惊讶）→ 书写（手笔平移）→ 回睡，循环播放
+> Animation demo: sleep (bubble breathing) → wake (bubble pop + surprise) → writing (hand & quill) → back to sleep, looping
+
 > 画布 560×600，支持 60%~200% 六档等比缩放
 > Canvas 560×600, 6-level proportional scaling from 60% to 200%
 
