@@ -69,7 +69,7 @@ It still has many rough edges: AI-generated assets, imperfect code structure, an
 
 ```bash
 # 1. 克隆仓库 Clone
-git clone https://github.com/你的用户名/dsh-desktop-pet.git
+git clone https://github.com/ryjgb13500-a11y/dsh-desktop-pet.git
 cd dsh-desktop-pet
 
 # 2. 安装依赖 Install
