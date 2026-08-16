@@ -4,8 +4,6 @@
 
 A little whale-maid living on your desktop — sleeping, waking up for tasks, writing homework — a desktop pet built entirely through AI collaboration.
 
-![preview](docs/preview_sleep.png)
-
 ![demo animation](docs/demo.gif)
 
 > 动画演示：睡眠（鼻涕泡呼吸）→ 唤醒（泡泡破裂+惊讶）→ 书写（手笔平移）→ 回睡，循环播放
